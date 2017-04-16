@@ -1,0 +1,14 @@
+<h1>Edit the customer</h1>
+<form action="/users/<%= user[0].id %>/edit" method="post">
+  <input type="hidden" name="_method" value="put" />
+  <label>First Name</label><br>
+  <input type="text" name="first_name" value="<%= user[0].first_name %>">
+  <br>
+  <label>Last Name</label><br>
+  <input type="text" name="last_name" value="<%= user[0].last_name %>">
+  <br>
+  <label>Email</label><br>
+  <input type="text" name="email" value="<%= user[0].email %>">
+  <br>
+  <input type="submit" value="Update">
+</form>
